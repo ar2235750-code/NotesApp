@@ -16,8 +16,8 @@ const App = () => {
     copytask.push({title,details})
     setTask(copytask);
 
-    console.log(copytask);
-    console.log(task);
+    // console.log(copytask);
+    // console.log(task);
     // console.log(title);
     // console.log(details);
 
@@ -67,11 +67,11 @@ const App = () => {
 
       </form>
 
-      <div className='p-10 lg:w-1/2  lg:border-l-2 '>
+      <div className='p-10 lg:w-1/2  lg:border-l-2 bg-black '>
 
         <h1 className='text-3xl font-bold '>Recent Notes</h1>
 
-        <div className='flex flex-wrap gap-5 mt-6 h-[90%] overflow-auto scrollbar-none'>
+        <div className='flex flex-wrap gap-5 mt-6 lg:h-[90%] overflow-auto scrollbar-none'>
           {task.map(function(elem,idx){
             return <div key={idx} className='flex justify-between flex-col items-start relative h-52 w-40 rounded-2xl bg-white overflow-auto scrollbar-none p-5 bg-[url("https://tse4.mm.bing.net/th/id/OIP.xHGYntepnOOygB-4FOKPtAAAAA?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3")] bg-cover fit-cover '>
             <div>
